@@ -536,17 +536,46 @@ body {
 
     .footer ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
     }
 
     .footer i {
         width: auto;
-        font-size: 3em;
+        font-size: 2.6em;
         margin: 0.2em;
         padding: 2px;
     }
 }
+
+/* EDIT RODAPÉ */
+
+#btnTop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 6%;
+    height: 1.5em;
+    right: -1em;
+    bottom: 3em;
+    padding-left: 0.4em;
+    font-size: 1.5em;
+    color: var(--first-color);
+    background: var(--second-color);
+    border-radius: 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    #btnTop {
+        width: 15%;
+        right: -1em;
+        bottom: 4em;
+        font-size: 1.2em;
+    }
+}
+
 
 /* EDIT RODAPÉ */
 

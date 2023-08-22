@@ -1,7 +1,5 @@
 
 
-
-
 /* EFEITO PRA REVELAR COM O INICIO DA PÁGINA */
 
 window.pgr = ScrollReveal();
@@ -23,3 +21,24 @@ sr.reveal('.card', { duration: 1000 });
 sr.reveal('.footer h3 ', { duration: 1000 });
 sr.reveal('.footer i', { duration: 1000 });
 sr.reveal('.rodape p', { duration: 1000 });
+
+
+/* CONST PARA RETORNAR AO TOPO DA PAGINA */
+
+const btn = document.getElementById("btnTop")
+
+btn.addEventListener("click", function(){
+    window.scrollTo(0,0)
+})
+
+document.addEventListener('scroll',ocultar)
+
+function ocultar(){
+    if(window.scrollY > 10){
+        btn.style.display = "flex"
+    } else {
+        btn.style.display = "none"
+    }
+}
+
+ocultar()
