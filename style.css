@@ -334,34 +334,30 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-.habilidade i {
+.habilidade img {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1.4em;
-    color: var(--first-color);
-    margin: 0.8em;
+    margin: 0.8em 0.8em 0.1em;
     font-size: 5em;
-    padding: 10px;
-    background-color: var(--second-color);
-    border: 1px solid var(--second-color);
-    border-radius: 55px;
-    transition: 400ms ease-in-out;
-    visibility: hidden;
+    transition: 400ms linear;
+    filter: grayscale(100%);
+    visibility: hidden; 
 }
 
-.habilidade i figcaption {
-    font-size: 8px;
+figcaption {
+    font-size: 12px;
     text-align: center;
+    color: var(--second-color);
 }
 
-.habilidade i:hover {
-    transform: scale(1.04);
-    color: var(--second-color);
-    box-shadow: 0 3px 0 var(--second-color);
-    background-color: var(--first-color);
+.habilidade img:hover {
+    transform: scale(1.05);
+    filter: none;
 }
 
 @media (max-width: 750px) {
@@ -376,14 +372,17 @@ body {
 
     .habilidade ul {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 
-    .habilidade i {
+    .habilidade li {
         width: auto;
-        font-size: 3em;
-        margin: 0.1em 1em;
-        padding: 2px;
+        margin: 0 4px;
+    }
+
+    .habilidade img {
+        margin: 0 0 4px;
+        width: 20vw;
     }
 }
 
@@ -501,27 +500,22 @@ body {
     text-decoration: none;
 }
 
-.footer i {
+.footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1.4em;
-    color: var(--first-color);
+    width: 1em;
     margin: 0.5em;
     font-size: 4em;
-    padding: 10px;
-    transition: 400ms ease-in-out;
-    visibility: hidden;
+    transition: 400ms linear;
+    filter: grayscale(100%);
+    visibility: hidden; 
 }
 
-.footer i figcaption {
-    font-size: 8px;
-    text-align: center;
-}
-
-.footer i:hover {
-    transform: scale(1.04);
+.footer img:hover {
+    transform: scale(1.05);
     text-decoration: none;
+    filter: none;
 }
 
 @media (max-width: 750px) {
@@ -537,15 +531,16 @@ body {
     .footer ul {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: auto;
+        margin-bottom: 1em;
     }
 
-    .footer i {
-        width: auto;
-        font-size: 2.6em;
-        margin: 0.2em;
+    .footer a img {
+        width: 15vw;
+        margin: 3.1px;
         padding: 2px;
     }
+
 }
 
 /* EDIT RODAPÉ */

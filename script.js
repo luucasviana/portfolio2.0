@@ -13,13 +13,14 @@ pgr.reveal('.btn', { duration: 2500 });
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.sobre h3', { duration: 1000 });
-sr.reveal('.sobre p', { duration: 1000 });
+sr.reveal('.sobre p', { duration: 1000 }); 
 sr.reveal('.habilidade h3', { duration: 1000 });
-sr.reveal('.habilidade ul i', { duration: 1000 });
+sr.reveal('.habilidade img', { duration: 1000 });
+sr.reveal('.habilidade figcaption', { duration: 500 });
 sr.reveal('.lista h3', { duration: 1000 });
 sr.reveal('.card', { duration: 1000 });
 sr.reveal('.footer h3 ', { duration: 1000 });
-sr.reveal('.footer i', { duration: 1000 });
+sr.reveal('.footer img', { duration: 1000 });
 sr.reveal('.rodape p', { duration: 1000 });
 
 
