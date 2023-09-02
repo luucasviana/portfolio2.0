@@ -20,7 +20,7 @@ sr.reveal('.habilidade figcaption', { duration: 500 });
 sr.reveal('.lista h3', { duration: 1000 });
 sr.reveal('.card', { duration: 1000 });
 sr.reveal('.footer h3 ', { duration: 1000 });
-sr.reveal('.footer img', { duration: 1000 });
+sr.reveal('.footer i', { duration: 1000 });
 sr.reveal('.rodape p', { duration: 1000 });
 
 
