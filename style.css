@@ -387,7 +387,7 @@ figcaption {
 .img6:hover {
     transform: scale(1.05);
     filter: none;
-    background-color: #2e8db6;
+    background-color: #0e132c;
 }
 
 @media (max-width: 750px) {
